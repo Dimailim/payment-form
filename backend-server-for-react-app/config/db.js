@@ -1,3 +1,3 @@
 module.exports = {
-    url: "mongodb+srv://test:test@testtaskcluster.0jtnx.mongodb.net/TestDB?retryWrites=true&w=majority"
+    url: process.env.MONGO_URL || "mongodb://localhost:27017"
 };
